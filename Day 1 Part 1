@@ -7,7 +7,7 @@ namespace A111
     {
         static void Main(string[] args)
         {
-            string line; int current, previous, total = 0, comparison = 0;
+            string line; int current, total = 0;
 
             using (StreamReader reader = new StreamReader("input.txt"))
             {
