@@ -1,0 +1,37 @@
+using System;
+using System.IO;
+
+namespace A111
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string line; int current, previous, total = 0, comparison = 0;
+
+            using (StreamReader reader = new StreamReader("input.txt"))
+            {
+                while ((line = reader.ReadLine()) != null)
+                {
+
+                    if (line == "")
+                    {   
+                        if(total >70000)
+                        {
+                            Console.WriteLine(total);
+                        }
+                        total = 0;
+                    }
+                    if (line != "")
+                    {
+                        current = int.Parse(line);
+                        total = total + current;
+
+                    }
+                }        
+            }
+       
+            Console.ReadKey();
+        }
+    }
+}
