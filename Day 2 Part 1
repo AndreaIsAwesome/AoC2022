@@ -1,0 +1,71 @@
+using System.IO;
+
+namespace A111
+{
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            using (StreamReader reader = new StreamReader("input.txt"))
+            {
+                string line; int total = 0;
+
+                while ((line = reader.ReadLine()) != null)
+                {
+
+                    if (line[0] == 'A' && line[2] == 'X') //Rock and Rock
+                    {
+                        total = total + 4;
+                    }
+
+                    if (line[0] == 'B' && line[2] == 'Y') //Paper and Paper
+                    {
+                        total = total + 5;
+                    }
+
+                    if (line[0] == 'C' && line[2] == 'Z') //Scissors and Scissors 
+                    {
+                        total = total + 6;
+                    }
+
+                    if (line[0] == 'A' && line[2] == 'Z') //Rock and Scissors 
+                    {
+                        total = total + 3;
+                    }
+
+                    if (line[0] == 'B' && line[2] == 'X') //Paper and Rock
+                    {
+                        total = total + 1;
+                    }
+
+                    if (line[0] == 'C' && line[2] == 'Y') //Scissors and Paper
+                    {
+                        total = total + 2;
+                    }
+
+
+                    if (line[0] == 'C' && line[2] == 'X') //Scissors and rock
+                    {
+                        total = total + 7;
+                    }
+
+                    if (line[0] == 'A' && line[2] == 'Y') //Rock and Paper
+                    {
+                        total = total + 8;
+                    }
+
+                    if (line[0] == 'B' && line[2] == 'Z') //Paper and Scissors 
+                    {
+                        total = total + 9;
+                    }
+
+
+
+                }   
+                Console.WriteLine(total);
+                Console.ReadKey();
+            }
+        }
+    }
+}
