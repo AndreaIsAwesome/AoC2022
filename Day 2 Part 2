@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace A111
+{
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            using (StreamReader reader = new StreamReader("input.txt"))
+            {
+                string line; int total = 0;
+
+                while ((line = reader.ReadLine()) != null)
+                {
+
+                    if (line[0] == 'A' && line[2] == 'X') //LOOSE
+                    {
+                        total = total + 3;
+                    }
+
+                    if (line[0] == 'A' && line[2] == 'Y') //DRAW
+                    {
+                        total = total + 4;
+                    }
+
+                    if (line[0] == 'A' && line[2] == 'Z') //WIN
+                    {
+                        total = total + 8; 
+                    }
+
+                    if (line[0] == 'B' && line[2] == 'X') 
+                    {
+                        total = total + 1;
+                    }
+
+                    if (line[0] == 'B' && line[2] == 'Y') 
+                    {
+                        total = total + 5;
+                    }
+
+                    if (line[0] == 'B' && line[2] == 'Z') 
+                    {
+                        total = total + 9; 
+                    }
+
+                    if (line[0] == 'C' && line[2] == 'X') 
+                    {
+                        total = total + 2;
+                    }
+
+                    if (line[0] == 'C' && line[2] == 'Y') 
+                    {
+                        total = total + 6;
+                    }
+
+                    if (line[0] == 'C' && line[2] == 'Z') 
+                    {
+                        total = total + 7; 
+                    }
+
+                }   
+                Console.WriteLine(total);
+                Console.ReadKey();
+            }
+        }
+    }
+}
