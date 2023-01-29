@@ -1,0 +1,8 @@
+C:\Users\infin\OneDrive\Documents\AoCDay3\bin\Debug\AoCDay3.exe.config
+C:\Users\infin\OneDrive\Documents\AoCDay3\bin\Debug\AoCDay3.exe
+C:\Users\infin\OneDrive\Documents\AoCDay3\bin\Debug\AoCDay3.pdb
+C:\Users\infin\OneDrive\Documents\AoCDay3\obj\Debug\AoCDay3.csproj.AssemblyReference.cache
+C:\Users\infin\OneDrive\Documents\AoCDay3\obj\Debug\AoCDay3.csproj.SuggestedBindingRedirects.cache
+C:\Users\infin\OneDrive\Documents\AoCDay3\obj\Debug\AoCDay3.csproj.CoreCompileInputs.cache
+C:\Users\infin\OneDrive\Documents\AoCDay3\obj\Debug\AoCDay3.exe
+C:\Users\infin\OneDrive\Documents\AoCDay3\obj\Debug\AoCDay3.pdb
